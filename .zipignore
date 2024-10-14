@@ -1,0 +1,7 @@
+.git/*
+.github/*
+.VSCodeCounter/*
+.demo
+.gitignore
+.zipignore
+ignore_file.txt
