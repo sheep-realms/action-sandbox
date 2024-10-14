@@ -11,6 +11,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Create build-info.txt with GitHub context
+      run: |
+        echo "Run ID: ${{ github.run_id }}" > build-info.txt
+        echo "Run Number: ${{ github.run_number }}" >> build-info.txt
+        echo "Commit SHA: ${{ github.sha }}" >> build-info.txt
+        echo "Repository: ${{ github.repository }} (${{ github.repository_id }})" >> build-info.txt
+        echo "Repository URL: ${{ github.repositoryUrl }}" >> build-info.txt
+        echo "Triggered by: ${{ github.actor }} (${{ github.actor_id }})" >> build-info.txt
+
     - name: Install zip
       run: sudo apt-get install zip
 
