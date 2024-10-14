@@ -1,0 +1,25 @@
+name: Zip and Upload Artifact
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install zip
+      run: sudo apt-get install zip
+
+    - name: Zip files (ignoring specified files)
+      run: |
+        zip -r my-archive.zip . -x @.zipignore
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: my-archive
+        path: my-archive.zip
