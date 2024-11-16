@@ -43,7 +43,7 @@ body:
         - 需要注意
         - 严重
         - 我不清楚
-      default: 一般
+      default: 1
     validations:
       required: true
   - type: textarea
