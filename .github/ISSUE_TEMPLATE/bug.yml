@@ -36,7 +36,7 @@ body:
     id: priority
     attributes:
       label: 漏洞风险评估
-      placeholder: 您认为我们应该如何看待这个漏洞？
+      description: 您认为我们应该如何看待这个漏洞？
       options:
         - 可忽略
         - 一般
