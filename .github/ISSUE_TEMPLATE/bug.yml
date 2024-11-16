@@ -1,0 +1,36 @@
+name: Bug 反馈
+description: 反馈漏洞
+labels: ["BUG"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您向我们汇报漏洞！
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 问题描述
+      description: 这个问题产生了什么样的效果？
+      placeholder: 请在此描述您遇到的问题...
+    validations:
+      required: true
+  - type: textarea
+    id: bug-recurrent
+    attributes:
+      label: 复现过程
+      description: 这个问题是如何出现的？
+      placeholder: 请在此描述如何复现此问题...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本
+      description: 这个问题发生在哪个版本？
+    validations:
+      required: true
+  - type: textarea
+    id: outher
+    attributes:
+      label: 补充描述
+      description: 还有什么需要补充的吗？
