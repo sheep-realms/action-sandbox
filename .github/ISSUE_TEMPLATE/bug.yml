@@ -9,6 +9,7 @@ body:
         在反馈漏洞之前，请进行以下检查：
         - 我已确认 Echo-Live 的最新发行版本中依然存在此问题。
         - 我已确认近期没有其他人提出类似问题。
+        ## 反馈内容
   - type: textarea
     id: bug-description
     attributes:
