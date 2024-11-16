@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        "##检查单\n在反馈漏洞之前，请进行以下检查：\n- 我已确认 Echo-Live 的最新发行版本中依然存在此问题。\n- 我已确认近期没有其他人提出类似问题。"
+        ##检查单\n在反馈漏洞之前，请进行以下检查：\n- 我已确认 Echo-Live 的最新发行版本中依然存在此问题。\n- 我已确认近期没有其他人提出类似问题。
   - type: textarea
     id: bug-description
     attributes:
