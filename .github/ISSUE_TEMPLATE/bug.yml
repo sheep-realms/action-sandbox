@@ -32,11 +32,17 @@ body:
       placeholder: 请在此描述如何复现此问题...
     validations:
       required: true
-  - type: input
-    id: version
+  - type: dropdown
+    id: priority
     attributes:
-      label: 版本
-      description: 这个问题发生在哪个版本？
+      label: 漏洞风险评估
+      placeholder: 您认为我们应该如何看待这个漏洞？
+      options:
+        - 可忽略
+        - 一般
+        - 需要注意
+        - 严重
+        - 我不清楚
     validations:
       required: true
   - type: textarea
